@@ -1,0 +1,28 @@
+<table class="table" >
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Date of birth</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let student of Studentt ">
+      <th scope="row">{{student.id}}</th>
+      <td style="color: black;">{{student.nom}}</td>
+      <td>{{student.prenom}}</td>
+      <td>{{student.datedenaissance}}</td>
+      <td>
+        <Button class="btn btn-primary"> ADD</Button>
+        <Button class="btn btn-danger">Dellet</Button>
+        <Button class="btn btn-success" [routerLink]="[student.id,'/edit']">Update</Button></td>
+
+    </tr>
+  </tbody>
+</table>
+
+  <div class="col-xs-2 col-sm-4">
+    <!-- <router-outlet></router-outlet> -->
+  </div>
+
