@@ -1,3 +1,4 @@
+import { AddStudentComponent } from './student/add-student/add-student.component';
 import { EditStudentComponent } from './student/edit-student/edit-student.component';
 import { NgModule } from '@angular/core';
 import { Routes,RouterModule } from "@angular/router";
@@ -6,9 +7,8 @@ import { StudentComponent } from "./student/student.component";
 
 const approute:Routes=[
   {path:'',component:HomeComponent},
-  {path:'student',component:StudentComponent,children:[
-    {path:':id/edit',component:EditStudentComponent}
-  ]}
+  {path:'student',component:StudentComponent},
+  {path:'student/Add',component:AddStudentComponent}
 
 ]
 @NgModule({

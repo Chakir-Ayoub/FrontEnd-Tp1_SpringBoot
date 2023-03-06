@@ -5,6 +5,7 @@
       <th scope="col">First</th>
       <th scope="col">Last</th>
       <th scope="col">Date of birth</th>
+      <th scope="col"><Button class="btn btn-primary" (click)="Add()"> ADD</Button></th>
     </tr>
   </thead>
   <tbody>
@@ -14,15 +15,15 @@
       <td>{{student.prenom}}</td>
       <td>{{student.datedenaissance}}</td>
       <td>
-        <Button class="btn btn-primary"> ADD</Button>
-        <Button class="btn btn-danger">Dellet</Button>
-        <Button class="btn btn-success" [routerLink]="[student.id,'/edit']">Update</Button></td>
+
+        <Button class="btn btn-danger" (click)="Remove(student.id)">Dellet</Button>
+        <Button class="btn btn-success" >Update</Button></td>
 
     </tr>
   </tbody>
 </table>
 
   <div class="col-xs-2 col-sm-4">
-    <!-- <router-outlet></router-outlet> -->
+    <router-outlet></router-outlet>
   </div>
 

@@ -17,4 +17,12 @@ export class StudentService {
      return this.httpclient.get<Student[]>(this.host+'/all');
    }
 
+   AddStudent(student:Student):Observable<Student>{
+    return this.httpclient.post<Student>(this.host+'/save', student);
+   }
+   deleteapi="http://localhost:8080/students/delete";
+   Remove(id:number){
+    return this.httpclient.delete(`${this.deleteapi}/${id}`);
+   }
+
 }

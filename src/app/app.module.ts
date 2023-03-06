@@ -9,13 +9,15 @@ import { AppComponent } from './app.component';
 import { StudentComponent } from './student/student.component';
 import { FormsModule } from '@angular/forms';
 import { EditStudentComponent } from './student/edit-student/edit-student.component';
+import { AddStudentComponent } from './student/add-student/add-student.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StudentComponent,
     HomeComponent,
-    EditStudentComponent
+    EditStudentComponent,
+    AddStudentComponent
   ],
   imports: [
     BrowserModule,

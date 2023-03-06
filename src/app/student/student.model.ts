@@ -1,6 +1,6 @@
 export class Student{
   Id:number;
-  FirstName:String;
-  LastName:String;
-  DateBirth:Date;
+  nom:String;
+  prenom:String;
+  datedenaissance:Date;
 }
