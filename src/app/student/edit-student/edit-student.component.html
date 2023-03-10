@@ -1,1 +1,26 @@
-<p>edit-student works!</p>
+
+<hr>
+<div class="form-droup" >
+ <tr>
+   <td>
+     <label >First Name  : </label>
+     <input type="text" #firstname value="{{student.nom}}">
+   </td>
+   <td>
+     <label for="">Last Name  : </label>
+     <input type="text" #lastname value="{{student.prenom}}">
+   </td>
+ </tr>
+
+ </div>
+ <div class="form-droup">
+   <tr>
+     <td>
+       <label for="">Birth Date : </label>
+       <input type="date" name="releaseDate" #date value="{{student.datedenaissance}}">
+     </td>
+   </tr>
+   <td>
+     <button class="btn btn-success" (click)="Update()" >Update Student</button>
+   </td>
+ </div>

@@ -39,10 +39,14 @@ export class StudentComponent implements OnInit,OnChanges {
   Add(){
     this.router.navigate(['Add'], { relativeTo: this.route});
   }
-//.subscribe(data=>console.log(data),error=>console.log(error) );
+
   Remove(id:number){
     this.studentservice.Remove(id)
     .subscribe(data=>console.log(data),error=>console.log(error) );
+  }
+
+  Update(id:number){
+    this.router.navigate(['edit/'+id], { relativeTo: this.route,queryParamsHandling:'preserve'});
   }
 
 }

@@ -8,7 +8,8 @@ import { StudentComponent } from "./student/student.component";
 const approute:Routes=[
   {path:'',component:HomeComponent},
   {path:'student',component:StudentComponent},
-  {path:'student/Add',component:AddStudentComponent}
+  {path:'student/Add',component:AddStudentComponent},
+  {path:'student/edit/:id',component:EditStudentComponent}
 
 ]
 @NgModule({
